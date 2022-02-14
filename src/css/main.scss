@@ -1,0 +1,52 @@
+@import './_navbar';
+@import './_contacts';
+@import './_projects';
+@import './_about';
+
+
+$primary-color: #272727;
+$secondary-color: #ff652f;
+$tertiary-color:#333;
+$selection-color: #FF7F50;
+$text-color: #fff;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+$font-size: (
+  "main-title": 150px,
+  "heading": 50px,
+  "text": 30px,
+);
+
+::selection{
+  background-color: $selection-color;
+}
+
+body{
+  background: $primary-color;
+  color: $text-color;
+  font-weight: map-get($font-weights, bold);
+}
+
+h1 {
+  font-size: map-get($font-size, heading);
+  margin: 10vh 10vw 0vh 10vw;
+}
+
+.title {
+  display: flex;
+  margin: 10vh 10vw 0vh 10vw;
+  font-size: map-get($font-size, main-title);
+
+}
+
+.typewrite {
+  margin: 2vh 10vw 10vh 10vw;
+  font-size: map-get($font-size, heading);
+}
+
+

@@ -1,0 +1,48 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+$tertiary-color:#333;
+
+$text-color: #fff;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+$font-size: (
+  "main-title": 150px,
+  "heading": 50px,
+  "text": 30px,
+);
+
+.contacts-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh 15vw 0vh 15vw;
+}
+
+.data-wrapper{
+    flex: 0 1 100%;
+    font-size: map-get($font-size, text);
+    margin: 2vh 0 2vh auto;
+    .link {
+      font-size: map-get($font-size, text);
+      float: left;
+      text-align: center;
+      width: fit-content;
+      height: 1.5em;
+      line-height: normal;
+      color: $text-color;
+      border-radius: 3px;
+      background: linear-gradient(to left, $primary-color 50%, $secondary-color 50%) right;
+      background-size: 201% 100%;
+      transition: .25s ease-out;
+      margin: auto;
+    }
+
+    .link:hover {
+      background-position: left;
+      color: $tertiary-color;  
+    }
+}
