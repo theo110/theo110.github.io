@@ -4,7 +4,21 @@ $font-size: (
   "text": 30px,
 );
 
-.words {
-    margin: 5vh 15vw 0vh 15vw;
+.about-wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  .text {
+    margin: 5vh 5vw 0vh 15vw;
     font-size: 20px;
+    flex: 3 0 0%;
+    text-align: left;
+  }
+  .myself{
+    vertical-align: top;
+    height: 396px;
+    border: 1px solid $secondary-color;
+    width: 471.2px;
+    margin: 5vh 15vw 0vh 5vw;
+    flex: 1 0 0%;
+  }
 }
